@@ -1,0 +1,54 @@
+%%writefile styles.css
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+}
+
+.container {
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px gray;
+}
+
+h1 {
+    color: #ff5722;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    animation: fadeInDown 1.5s ease-out;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+
+button {
+    background-color: #333399;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5555cc;
+}
+
+/* Define the fade-in and slide-down animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
